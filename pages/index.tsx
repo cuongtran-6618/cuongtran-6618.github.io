@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import Layout from '../components/layout';
-import LogoSrc from '../public/images/logo.png'
+import LogoSrc from '../public/images/Logo.png'
 
 export default function Home() {
   return (
