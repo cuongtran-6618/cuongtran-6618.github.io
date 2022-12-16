@@ -4,13 +4,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Layout from '../components/layout';
 import LogoSrc from '../public/images/Logo.png'
+import Slider from '../components/slider';
 
 export default function Home() {
   return (
     <Layout>
-      <main className='container mx-auto'>
-              
-      </main>
+      <Slider />
+      <div className=''>
+      </div>
     </Layout>
   );
 }
