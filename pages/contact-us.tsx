@@ -1,5 +1,5 @@
-import BackHome from '../components/back-home';
-import Layout from '../components/layout';
+import BackHome from "../components/back-home";
+import Layout from "../components/layout";
 
 export default function ContactUs() {
   return (

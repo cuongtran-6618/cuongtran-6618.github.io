@@ -2,18 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 /** Slider demo **/
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-[class^='number-slide'],
-[class*=' number-slide'] {
+[class^="number-slide"],
+[class*=" number-slide"] {
   background: grey;
   display: flex;
   align-items: center;
