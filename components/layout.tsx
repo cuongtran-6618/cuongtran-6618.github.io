@@ -6,11 +6,13 @@ export default function Layout({ children }) {
   return (
     <>
       <Meta />
-      <div className='lg:container lg:mx-auto'></div><Navigation />
-      <div className="min-h-screen">        
-        <main className="lg:container lg:mx-auto">{children}</main>
+      <div className='lg:container lg:mx-auto'>
+        <Navigation />
+      </div>
+      <div className='min-h-screen'>
+        <main className='lg:mx-auto'>{children}</main>
       </div>
       <Footer />
     </>
-  )
+  );
 }

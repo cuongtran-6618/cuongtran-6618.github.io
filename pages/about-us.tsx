@@ -1,4 +1,4 @@
-import BackHome from "../components/back-home";
+import BackHome from '../components/back-home';
 import Layout from '../components/layout';
 
 export default function AboutUs() {
