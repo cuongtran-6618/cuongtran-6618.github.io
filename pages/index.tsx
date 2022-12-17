@@ -12,10 +12,12 @@ export default function Home() {
   return (
     <Layout>
       <Slider />
-      <section className='lg:container lg:mx-auto grid grid-cols-2'>
-        {data.services.map((service) => (
-          <Service key={service.uid} props={service} />
-        ))}
+      <section className='lg:container lg:mx-auto mt-4 mb-4'>
+        <div className='grid grid-cols-2'>
+          {data.services.map((service) => (
+            <Service key={service.uid} props={service} />
+          ))}
+        </div>
       </section>
     </Layout>
   );
