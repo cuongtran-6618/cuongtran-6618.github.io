@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <Layout>
       <Slider />
-      <section className=''>
+      <section className='lg:container lg:mx-auto grid grid-cols-2'>
         {data.services.map((service) => (
           <Service key={service.uid} props={service} />
         ))}
