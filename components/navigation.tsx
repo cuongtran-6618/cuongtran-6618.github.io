@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import LogoSrc from "../public/images/Logo.png";
+import navigation from "../data/navigation.json";
+import NavigationItem from "./navigation-item";
 
 export default function Navigation() {
   return (
@@ -17,18 +19,9 @@ export default function Navigation() {
         </Link>
       </div>
       <div className="flex flex-row justify-between items-baseline flex-wrap m-3">
-        <div className="hover:underline underline-offset-8">
-          <Link href="/services">Services</Link>
-        </div>
-        <div className="hover:underline underline-offset-8">
-          <Link href="/our-work">Our work</Link>
-        </div>
-        <div className="hover:underline underline-offset-8">
-          <Link href="/about-us">About us</Link>
-        </div>
-        <div className="hover:underline underline-offset-8">
-          <Link href="/contact-us">Contact us</Link>
-        </div>
+        {navigation.navigation.map((item) => (
+          <NavigationItem key={item.uid} item={item} />
+        ))}
       </div>
     </>
   );
