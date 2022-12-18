@@ -6,7 +6,7 @@ export default function Layout({ children }) {
   return (
     <>
       <Meta />
-      <div className="lg:container lg:mx-auto">
+      <div className="">
         <Navigation />
       </div>
       <div className="min-h-screen">
