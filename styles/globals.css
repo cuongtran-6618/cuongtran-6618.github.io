@@ -5,7 +5,7 @@
 /** Slider demo **/
 body {
   margin: 0;
-  font-family: "Inter", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -17,4 +17,106 @@ body {
   color: #fff;
   font-weight: 500;
   max-height: 100vh;
+}
+
+:root {
+  --bloody-red-color: #660708;
+  --ruby-red-color: #a4161a;
+  --carnelian-color: #ba181b;
+  --imperial-red-color: #660708;
+  --rich-black-color: #0b090a;
+  --eerie-black-color: #161a1d;
+  --black-shadow-color: #b1a7a6;
+  --light-grey-color: #d3d3d3;
+  --cultured-color: #f5f3f4;
+}
+
+.bloody-red {
+  background-color: var(--bloody-red-color);
+}
+
+.ruby-red {
+  background-color: var(--ruby-red-color);
+}
+
+.carnelian-red {
+  background-color: var(--carnelian-color);
+}
+
+.imperial-red {
+  background-color: var(--imperial-color);
+}
+
+/*
+#mobile-nav {
+  position: absolute;
+  overflow: hidden;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transition: transform .5s ease;
+}
+
+.show #mobile-nav-content{
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+}
+
+#mobile-nav-content {
+  height: 100%;
+  width: 70%;
+  background-color: var(--bloody-red-color);
+
+}
+*/
+
+#mobile-navigation-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#mobile-nav-slider-container {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.8);
+  animation: 0.3s ease-in 0s 1 normal none running mobile-nav-container-opacity;
+}
+
+@keyframes mobile-nav-container-opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hidden {
+  display: none !important;
+}
+
+#mobile-nav {
+  position: absolute;
+  width: 85%;
+  min-height: 100vh;
+  right: 0;
+  animation: 0.6s ease-in 0s 1 normal none running mobile-nav-slidein;
+}
+
+@keyframes mobile-nav-slidein {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 0;
+  }
 }
