@@ -21,18 +21,19 @@ export default function Navigation() {
   return (
     <>
       <div className="flex flex-row ruby-red text-white">
-        <div className="flex flex-row justify-left items-baseline flex-wrap mx-6 my-6 basis-1/2 grow">
+        <div className="flex flex-row justify-left items-baseline flex-wrap mx-6 my-4 grow md:grow-0">
           <div>
             <Link href="/" title="homepage" className="font-bold text-4xl">
               Arpeggio
             </Link>
           </div>
         </div>
-        <section id="mobile-navigation-container">
-          <div className="sm:hidden">
-            <div className="m-4" onClick={toggleMobileNav}>
-              <Bars3Icon className="w-8 h-8" />
-            </div>
+        <section
+          id="mobile-navigation-container"
+          className="flex flex-col justify-center md:hidden uppercase font-medium text-sm"
+        >
+          <div className="m-4" onClick={toggleMobileNav}>
+            <Bars3Icon className="w-8 h-8" />
           </div>
           <div
             id="mobile-nav-slider-container"
@@ -43,7 +44,7 @@ export default function Navigation() {
                 <XMarkIcon className="w-6 h-6" />
               </div>
               <div id="mobile-nav-content">
-                <ul className="mobile-menu flex flex-col justify-end items-baseline flex-wrap m-8 basis-1/2 gap-8">
+                <ul className="mobile-menu flex flex-col justify-end items-baseline flex-wrap m-8 gap-8">
                   {navigation.navigation.map((item) => (
                     <NavigationItem key={item.uid} item={item} />
                   ))}
@@ -51,6 +52,15 @@ export default function Navigation() {
               </div>
             </nav>
           </div>
+        </section>
+        <section className="hidden md:block uppercase md:text-xs lg:text-xl font-medium grow">
+          <nav className="">
+            <ul className="mobile-menu flex flex-row justify-end items-baseline flex-wrap m-6 sm:gap-1 md:gap-4 xl:gap-8 leading-8">
+              {navigation.navigation.map((item) => (
+                <NavigationItem key={item.uid} item={item} />
+              ))}
+            </ul>
+          </nav>
         </section>
       </div>
     </>
