@@ -4,29 +4,33 @@ import LogoSrc from "../public/images/Logo.png";
 import navigation from "../data/navigation.json";
 import NavigationItem from "./navigation-item";
 import { useState } from "react";
-import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/solid";
+import {
+  XMarkIcon,
+  Bars3Icon,
+  CheckBadgeIcon,
+} from "@heroicons/react/24/solid";
 
 export default function Navigation() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const toggleMobileNav = () => {
-    console.log(isNavOpen);
     setIsNavOpen(!isNavOpen);
   };
 
   const closeMobileNav = () => {
-    console.log(isNavOpen);
     setIsNavOpen(false);
   };
   return (
     <>
-      <div className="flex flex-row ruby-red text-white">
-        <div className="flex flex-row justify-left items-baseline flex-wrap mx-6 my-4 grow md:grow-0">
-          <div>
-            <Link href="/" title="homepage" className="font-bold text-4xl">
-              Arpeggio
-            </Link>
-          </div>
+      <div className="flex flex-row secondary-color text-white">
+        <div className="flex flex-col justify-center items-baseline flex-wrap mx-6 grow md:grow-0">
+          <Link
+            href="/"
+            title="homepage"
+            className="font-bold text-3xl flex flex-row justify-center items-baseline"
+          >
+            Arpeggia.
+          </Link>
         </div>
         <section
           id="mobile-navigation-container"
@@ -39,7 +43,7 @@ export default function Navigation() {
             id="mobile-nav-slider-container"
             className={isNavOpen ? "" : "hidden"}
           >
-            <nav id="mobile-nav" className="ruby-red">
+            <nav id="mobile-nav" className="secondary-color">
               <div onClick={closeMobileNav} className="m-8">
                 <XMarkIcon className="w-6 h-6" />
               </div>
@@ -53,7 +57,7 @@ export default function Navigation() {
             </nav>
           </div>
         </section>
-        <section className="hidden md:block uppercase md:text-xs lg:text-xl font-medium grow">
+        <section className="hidden md:block uppercase grow">
           <nav className="">
             <ul className="mobile-menu flex flex-row justify-end items-baseline flex-wrap m-6 sm:gap-1 md:gap-4 xl:gap-8 leading-8">
               {navigation.navigation.map((item) => (

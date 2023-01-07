@@ -1,18 +1,18 @@
 {
   "services": [
     {
-      "title": "Service 1",
-      "content": "Lorem ispum 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "title": "Customer websites and e-commerce",
+      "content": "Professionally hosted reponsive, SEO friendly and customer centric website. Customised feature on demand",
       "link": "/service#service_1",
       "uid": "dd2d2005-4b59-4399-8d4b-ee6a9dbf581e",
-      "icon": "XMarkIcon"
+      "icon": "AdjustmentsVertical"
     },
     {
-      "title": "Service 2",
-      "content": "Lorem ispum 2, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "title": "Websites maintenance",
+      "content": "Continuous services after going live with short turaround time.",
       "link": "/service#service_2",
       "uid": "c3f02b16-363d-4c1c-a569-2b4bbfad7d37",
-      "icon": "XMarkIcon"
+      "icon": "Cog8Tooth"
     }
   ]
 }

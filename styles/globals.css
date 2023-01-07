@@ -8,6 +8,7 @@ body {
   font-family: "Noto Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--outer-spce-grey-color);
 }
 
 [class^="number-slide"],
@@ -20,39 +21,21 @@ body {
 }
 
 :root {
-  --bloody-red-color: #660708;
-  --ruby-red-color: #a4161a;
-  --carnelian-color: #ba181b;
-  --imperial-red-color: #660708;
-  --rich-black-color: #0b090a;
-  --eerie-black-color: #161a1d;
-  --black-shadow-color: #b1a7a6;
-  --light-grey-color: #d3d3d3;
-  --cultured-color: #f5f3f4;
+  --outer-spce-grey-color: #303841;
+  --safety-orange-color: #ff7700;
+  --navy-blue-color: #1cd6ce;
 }
 
-.bloody-red {
-  background-color: var(--bloody-red-color);
+.primary-color {
+  background-color: var(--safety-orange-color);
 }
 
-.ruby-red {
-  background-color: var(--ruby-red-color);
+.secondary-color {
+  background-color: var(--outer-spce-grey-color);
 }
 
-.carnelian-red {
-  background-color: var(--carnelian-color);
-}
-
-.imperial-red {
-  background-color: var(--imperial-color);
-}
-
-.rich-black {
-  background-color: var(--rich-black-color);
-}
-
-.eerie-black {
-  background-color: var(--eerie-black-color);
+.link-color {
+  color: var(--navy-blue-color);
 }
 
 #mobile-nav-slider-container {
@@ -100,8 +83,6 @@ body {
   height: 300px;
   width: auto;
   padding: 30px 20px;
-  background: no-repeat url("../public/images/hero-image.png");
-  background-size: cover;
 }
 
 #hero-title {
@@ -116,6 +97,7 @@ body {
 .service-item {
   border-radius: 1rem 4rem 1rem 1rem;
   margin-bottom: 20px;
+  border-color: var(--safety-orange-color);
 }
 
 /** table style **/
