@@ -95,14 +95,22 @@ body {
 /** Service **/
 
 .service-item {
-  border-radius: 1rem 4rem 1rem 1rem;
+  border-radius: 1rem 8rem 1rem 1rem;
   margin-bottom: 20px;
   border-color: var(--safety-orange-color);
+}
+
+.width-col-2 {
+  width: calc(100% - 2rem);
 }
 
 /** table style **/
 @media screen and (min-width: 768px) {
   #hero-section {
     height: calc(100vh - 72px);
+  }
+
+  .width-col-2 {
+    max-width: 25%;
   }
 }

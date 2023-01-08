@@ -2,7 +2,7 @@ import React from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import SliderData from "../data/slider_images.json";
-import SliderItem from "./slider-item";
+import SliderItem from "./Slider";
 
 export default function Slider() {
   const [sliderRef] = useKeenSlider(

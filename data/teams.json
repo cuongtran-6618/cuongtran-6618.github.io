@@ -1,0 +1,20 @@
+{
+  "teams": [
+    {
+      "name": "John Doe",
+      "title": "Developer",
+      "email": "demo1@email.com",
+      "phone": "+358-40-000-0000",
+      "uid": "dd2d2005-4b59-4399-8d4b-ee6a9dbf581ef",
+      "avatar": ""
+    },
+    {
+      "name": "John Doe",
+      "title": "Marketing",
+      "email": "demo2@email.com",
+      "phone": "+358-40-000-0000",
+      "uid": "dd2d2005-4b59-4399-8d4b-ee6a9dbf581ef",
+      "avatar": ""
+    }
+  ]
+}

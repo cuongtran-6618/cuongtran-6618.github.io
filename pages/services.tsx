@@ -1,7 +1,5 @@
-import BackHome from "../components/back-home";
-import Layout from "../components/layout";
-import data from "../data/services.json";
-import Service from "../components/service";
+import BackHome from "../components/BackHome";
+import Layout from "../components/Layout";
 
 export default function Services() {
   return (

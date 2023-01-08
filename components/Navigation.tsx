@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import LogoSrc from "../public/images/Logo.png";
 import navigation from "../data/navigation.json";
-import NavigationItem from "./navigation-item";
+import NavigationItem from "./NavigationItem";
 import { useState } from "react";
 import {
   XMarkIcon,
@@ -59,7 +59,7 @@ export default function Navigation() {
         </section>
         <section className="hidden md:block uppercase grow">
           <nav className="">
-            <ul className="mobile-menu flex flex-row justify-end items-baseline flex-wrap m-6 sm:gap-1 md:gap-4 xl:gap-8 leading-8">
+            <ul className="mobile-menu flex flex-row justify-end items-baseline flex-wrap m-6 sm:gap-1 md:gap-4 xl:gap-14 leading-8">
               {navigation.navigation.map((item) => (
                 <NavigationItem key={item.uid} item={item} />
               ))}
