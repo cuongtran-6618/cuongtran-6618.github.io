@@ -1,5 +1,6 @@
 import Porfolio from "./Porfolio";
 import data from "../data/porfolios.json";
+import LinkArrow from "./LinkArrow";
 
 export default function PorfolioList() {
   return (
@@ -14,6 +15,7 @@ export default function PorfolioList() {
           <Porfolio key={porfolio.uid} props={porfolio} />
         ))}
       </div>
+      <LinkArrow label={"See more of our project"} url={"./porfolio"} />
     </section>
   );
 }

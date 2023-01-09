@@ -1,5 +1,6 @@
 import Service from "./Service";
 import data from "../data/services.json";
+import LinkArrow from "./LinkArrow";
 
 export default function ServiceList() {
   return (
@@ -14,6 +15,10 @@ export default function ServiceList() {
           <Service key={service.uid} props={service} />
         ))}
       </div>
+      <LinkArrow
+        label={"Contact us for more information   "}
+        url={"./contact"}
+      />
     </section>
   );
 }
