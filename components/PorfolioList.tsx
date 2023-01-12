@@ -6,7 +6,7 @@ export default function PorfolioList() {
   return (
     <section className="container mx-4 sm:mx-auto pt-4 pb-4">
       <div>
-        <h3 className="font-bold text-2xl md:text-4xl mb-[72px] text-white">
+        <h3 className="text-2xl mb-8 md:mb-16 md:text-3xl mb-[72px] text-white">
           Our Porfolio
         </h3>
       </div>

@@ -57,7 +57,7 @@ export default function Navigation() {
             </nav>
           </div>
         </section>
-        <section className="hidden md:block uppercase grow">
+        <section className="hidden md:block grow">
           <nav className="">
             <ul className="mobile-menu flex flex-row justify-end items-baseline flex-wrap m-6 sm:gap-1 md:gap-4 xl:gap-14 leading-8">
               {navigation.navigation.map((item) => (

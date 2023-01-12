@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+/** desktop style **/
+@media screen, print and (min-width: 1080px) {
+  .width-col-2 {
+    /*max-width: 33.33%;*/
+  }
+}
+
+/** table style **/
+@media screen, print and (min-width: 768px) and (max-width: 1080px) {
+  #hero-section {
+    height: calc(100vh - 72px);
+  }
+
+  .width-col-2 {
+    /*max-width: 50%;*/
+  }
+}
+
+
 /** Slider demo **/
 body {
   margin: 0;
@@ -85,32 +104,18 @@ body {
   padding: 30px 20px;
 }
 
-#hero-title {
-  margin-bottom: 20px;
-  font-size: 1rem;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-
 /** Service **/
 
 .service-item {
-  border-radius: 1rem 8rem 1rem 1rem;
+  border-radius: 1rem;
   margin-bottom: 20px;
   border-color: var(--safety-orange-color);
 }
 
 .width-col-2 {
-  width: calc(100% - 2rem);
+  /*width: calc(100% - 2rem);*/
 }
 
-/** table style **/
-@media screen and (min-width: 768px) {
-  #hero-section {
-    height: calc(100vh - 72px);
-  }
-
-  .width-col-2 {
-    max-width: 25%;
-  }
+.container {
+  max-width: calc(100% - 32px);
 }
