@@ -7,7 +7,7 @@ export default function Person({ props }) {
   if (props.avatar !== "") {
   }
   return (
-    <div className="width-col-2 p-4 sm:p-12 text-white text-center">
+    <div className="width-col-2 p-4 sm:p-12 text-white text-center  w-full md:w-1/2 lg:w-1/3">
       <div className="avatar flex items-center justify-center">{avatar}</div>
       <h4 className="text-2xl mt-4 sm:mt-8 mb-6 uppercase font-medium">
         {props.title}

@@ -4,18 +4,18 @@
 
 /** desktop style **/
 @media screen, print and (min-width: 1080px) {
-  div.width-col-2 {
+  .block-container div.grid-item {
     width: 33.33%;
+  }
+
+  #hero-section {
+    height: calc(100vh - 80px);
   }
 }
 
 /** table style **/
 @media screen, print and (min-width: 768px) and (max-width: 1080px) {
-  #hero-section {
-    height: calc(100vh - 72px);
-  }
-
-  .width-col-2 {
+  .grid-item {
     width: 50%;
   }
 }
@@ -99,7 +99,6 @@ body {
 }
 
 #hero-section {
-  height: 300px;
   width: auto;
   padding: 30px 20px;
   background-image: url('../public/images/computer.jpg');
@@ -115,8 +114,8 @@ body {
 
 /** mobile style **/
 @media screen, print and (max-width: 768px) {
-  div.width-col-2 {
-    width: calc(100% - 32px);
+  div.grid-item {
+    width: 100%;
   }
 
   .block-container {

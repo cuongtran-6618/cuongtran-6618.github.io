@@ -9,7 +9,7 @@ export default function PorfolioList() {
       <div>
         <SectionHeader title={"Our Porfolio"} />
       </div>
-      <div className="flex flex-col md:justify-center md:aligns-baseline md:flex-row gap-4 md:gap-8 mb-10">
+      <div className="flex flex-col mx-auto md:flex-row md:justify-center md:aligns-baseline md:gap-8 mb-10">
         {data.porfolios.map((porfolio) => (
           <Porfolio key={porfolio.uid} props={porfolio} />
         ))}

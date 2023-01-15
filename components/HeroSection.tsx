@@ -3,7 +3,7 @@ export default function HeroSection() {
     <>
       <section
         id="hero-section"
-        className="text-white flex justify-center items-center m-b-16 relative"
+        className="text-white flex justify-center items-center m-b-16 relative h-80 md:hull"
       >
         <div
           id="hero-content-container-wrapper"
@@ -11,7 +11,7 @@ export default function HeroSection() {
         >
           <div
             id="hero-content-container"
-            className="mx-auto max-w-screen-md text-center"
+            className="mx-auto max-w-screen-md text-center md:mt-48"
           >
             <div id="hero-title" className="text-4xl font-bold uppercase mb-5">
               <h1 className="font-rubik">Arpeggio title</h1>
