@@ -8,7 +8,7 @@ import {
 
 export default function Icon({
   name,
-  classOfIcon = "h-9 w-9 mx-auto mb-8 sm:h-11 sm:w11",
+  classOfIcon = "h-9 w-9 mx-auto mb-8 md:h-12 md:w12 md:mx-none",
 }) {
   let icon = <XMarkIcon />;
 

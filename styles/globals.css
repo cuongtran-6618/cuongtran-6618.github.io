@@ -4,8 +4,8 @@
 
 /** desktop style **/
 @media screen, print and (min-width: 1080px) {
-  .width-col-2 {
-    max-width: 33.33%;
+  div.width-col-2 {
+    width: 33.33%;
   }
 }
 
@@ -16,7 +16,7 @@
   }
 
   .width-col-2 {
-    max-width: 50%;
+    width: 50%;
   }
 }
 
@@ -113,10 +113,13 @@ body {
   border-color: var(--safety-orange-color);
 }
 
-.width-col-2 {
-  max-width: unset;
-}
+/** mobile style **/
+@media screen, print and (max-width: 768px) {
+  div.width-col-2 {
+    width: calc(100% - 32px);
+  }
 
-.container {
-  max-width: calc(100% - 32px);
+  .block-container {
+    width: calc(100% - 32px);
+  }
 }

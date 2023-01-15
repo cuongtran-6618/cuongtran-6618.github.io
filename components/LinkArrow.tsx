@@ -3,7 +3,7 @@ import Icon from "./Icon";
 
 export default function LinkArrow({ label, url }) {
   return (
-    <div className="">
+    <div className="text-left md:text-center">
       <Link href={url} title={label} className="text-xs italic link-color">
         <div className="h-11 leading-[1.48rem] decoration-2 inline-block">
           <span className="">{label}</span>
