@@ -5,11 +5,12 @@ export default function LinkArrow({
   label,
   url,
   style = "text-xs italic link-color",
+  styleContainer = "text-left md:text-center mb-8",
 }) {
   return (
-    <div className="text-left md:text-center">
+    <div className={styleContainer}>
       <Link href={url} title={label} className={style}>
-        <div className="h-11 leading-[1.48rem] decoration-2 inline-block">
+        <div className="h-8 leading-[1.48rem] decoration-2 inline-block">
           <span className="">{label}</span>
         </div>{" "}
         <Icon

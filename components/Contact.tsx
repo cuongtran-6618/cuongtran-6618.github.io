@@ -4,11 +4,12 @@ export default function Contact() {
   return (
     <>
       <div className="w-full">
-        <div className="w-full lg:w-fit primary-color p-8">
+        <div className="mb-8">
           <LinkArrow
             label={"Start a conversation"}
             url={"./contact"}
-            style="text-3xl text-white uppercase"
+            style="text-xl text-white uppercase"
+            styleContainer="w-full lg:w-fit primary-color px-2 py-4 md:p-8"
           />
         </div>
       </div>
