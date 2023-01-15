@@ -24,7 +24,7 @@
 /** Slider demo **/
 body {
   margin: 0;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Roboto Mono";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--outer-spce-grey-color);
@@ -102,13 +102,14 @@ body {
   height: 300px;
   width: auto;
   padding: 30px 20px;
+  background-image: url('../public/images/computer.jpg');
+  background-size: cover;
 }
 
 /** Service **/
 
 .service-item {
   border-radius: 1rem;
-  margin-bottom: 20px;
   border-color: var(--safety-orange-color);
 }
 

@@ -6,7 +6,10 @@ import {
   ArrowLongRightIcon,
 } from "@heroicons/react/24/solid";
 
-export default function Icon({ name, classOfIcon = "h-8 w-8 sm:h-11 sm:w11" }) {
+export default function Icon({
+  name,
+  classOfIcon = "h-9 w-9 mx-auto mb-8 sm:h-11 sm:w11",
+}) {
   let icon = <XMarkIcon />;
 
   switch (name) {
@@ -24,5 +27,5 @@ export default function Icon({ name, classOfIcon = "h-8 w-8 sm:h-11 sm:w11" }) {
       break;
   }
 
-  return <div className="h-8 w-8 sm:h-11 sm:w11 relative">{icon}</div>;
+  return <div className={classOfIcon}>{icon}</div>;
 }
