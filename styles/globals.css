@@ -5,7 +5,7 @@
 /** desktop style **/
 @media screen, print and (min-width: 1080px) {
   .width-col-2 {
-    /*max-width: 33.33%;*/
+    max-width: 33.33%;
   }
 }
 
@@ -16,7 +16,7 @@
   }
 
   .width-col-2 {
-    /*max-width: 50%;*/
+    max-width: 50%;
   }
 }
 
@@ -113,7 +113,7 @@ body {
 }
 
 .width-col-2 {
-  /*width: calc(100% - 2rem);*/
+  max-width: unset;
 }
 
 .container {
