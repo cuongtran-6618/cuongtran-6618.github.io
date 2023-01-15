@@ -10,7 +10,7 @@ export default function PorfolioList() {
           Our Porfolio
         </h3>
       </div>
-      <div className="flex flex-col sm:flex-row justify-center aligns-baseline gap-16">
+      <div className="flex flex-col sm:flex-row justify-center aligns-baseline gap-16 mb-10">
         {data.porfolios.map((porfolio) => (
           <Porfolio key={porfolio.uid} props={porfolio} />
         ))}

@@ -10,7 +10,7 @@ export default function ServiceList() {
           Our Services
         </h3>
       </div>
-      <div className="flex flex-col sm:flex-row justify-center aligns-baseline gap-16">
+      <div className="flex flex-col sm:flex-row justify-center aligns-baseline gap-16 mb-10">
         {data.services.map((service) => (
           <Service key={service.uid} props={service} />
         ))}
