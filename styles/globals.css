@@ -121,8 +121,4 @@ body {
   .block-container {
     width: calc(100% - 32px);
   }
-
-    #hero-section {
-    height: 300px;
-  }
 }

@@ -3,7 +3,7 @@ export default function HeroSection() {
     <>
       <section
         id="hero-section"
-        className="text-white flex justify-center items-center m-b-16 relative h-80 md:hull"
+        className="text-white flex justify-center items-center m-b-16 relative h-80"
       >
         <div
           id="hero-content-container-wrapper"
