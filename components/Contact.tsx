@@ -9,7 +9,7 @@ export default function Contact() {
             label={"Start a conversation"}
             url={"./contact"}
             style="text-xl text-white uppercase"
-            styleContainer="w-full lg:w-fit primary-color px-2 py-4 md:p-8"
+            styleContainer="w-full lg:w-fit primary-color px-2 py-4 md:p-8 text-center md:text-left mx-auto"
           />
         </div>
       </div>

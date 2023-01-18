@@ -3,7 +3,7 @@ import data from "../data/teams.json";
 import SectionHeader from "./SectionHeader";
 export default function TeamList() {
   return (
-    <section className="block-container mx-auto">
+    <section className="block-container mx-auto mb-16">
       <div>
         <SectionHeader title={"Our team"} />
       </div>

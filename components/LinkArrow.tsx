@@ -5,7 +5,7 @@ export default function LinkArrow({
   label,
   url,
   style = "text-xs italic link-color",
-  styleContainer = "text-left md:text-center mb-8",
+  styleContainer = "text-center md:text-left md:text-center mb-8",
 }) {
   return (
     <div className={styleContainer}>

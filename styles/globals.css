@@ -11,6 +11,10 @@
   #hero-section {
     height: calc(100vh - 80px);
   }
+
+  div.service-item {
+    min-height: unset;
+  }
 }
 
 /** table style **/
@@ -120,5 +124,9 @@ body {
 
   .block-container {
     width: calc(100% - 32px);
+  }
+
+  .service-item {
+      min-height: calc(100vw - 32px);
   }
 }

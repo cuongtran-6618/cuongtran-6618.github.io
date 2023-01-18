@@ -5,7 +5,7 @@ import SectionHeader from "./SectionHeader";
 
 export default function ServiceList() {
   return (
-    <section className="block-container mx-auto">
+    <section className="block-container mx-auto mb-16">
       <div>
         <SectionHeader title={"Our Services"} />
       </div>
