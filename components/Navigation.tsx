@@ -3,6 +3,7 @@ import Image from "next/image";
 import LogoSrc from "../public/images/Logo.png";
 import navigation from "../data/navigation.json";
 import NavigationItem from "./NavigationItem";
+import company from "../data/company.json";
 import { useState } from "react";
 import {
   XMarkIcon,
@@ -23,18 +24,18 @@ export default function Navigation() {
   return (
     <>
       <div className="flex flex-row secondary-color text-white">
-        <div className="flex flex-col justify-center items-baseline flex-wrap mx-6 grow md:grow-0">
+        <div className="flex flex-col justify-center items-baseline flex-wrap mx-6 grow lg:grow-0">
           <Link
             href="/"
             title="homepage"
             className="font-bold text-3xl flex flex-row justify-center items-baseline"
           >
-            Arpeggia.
+            {company.info.name}
           </Link>
         </div>
         <section
           id="mobile-navigation-container"
-          className="flex flex-col justify-center md:hidden uppercase font-medium text-sm"
+          className="flex flex-col justify-center lg:hidden uppercase font-medium text-sm"
         >
           <div className="m-4" onClick={toggleMobileNav}>
             <Bars3Icon className="w-8 h-8" />
@@ -57,9 +58,9 @@ export default function Navigation() {
             </nav>
           </div>
         </section>
-        <section className="hidden md:block grow">
+        <section className="hidden lg:block grow">
           <nav className="">
-            <ul className="mobile-menu flex flex-row justify-end items-baseline flex-wrap m-6 sm:gap-1 md:gap-4 xl:gap-14 leading-8">
+            <ul className="mobile-menu flex flex-row justify-end items-baseline flex-wrap m-6 sm:gap-1 lg:gap-4 xl:gap-14 leading-8">
               {navigation.navigation.map((item) => (
                 <NavigationItem key={item.uid} item={item} />
               ))}

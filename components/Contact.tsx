@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <>
       <div className="w-full">
-        <div className="mb-8">
+        <div className="mb-8 lg:mb-32">
           <LinkArrow
             label={"Start a conversation"}
             url={"./contact"}

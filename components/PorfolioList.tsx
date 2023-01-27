@@ -5,7 +5,7 @@ import SectionHeader from "./SectionHeader";
 
 export default function PorfolioList() {
   return (
-    <section className="block-container mx-auto mb-16">
+    <section className="block-container mx-auto mb-16 lg:mb-20">
       <div>
         <SectionHeader title={"Our Porfolio"} />
       </div>
