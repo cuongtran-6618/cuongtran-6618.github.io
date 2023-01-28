@@ -1,19 +1,44 @@
 import BackHome from "../components/BackHome";
 import Layout from "../components/Layout";
 import React from "react";
+import { useState } from "react";
 
 export default function ContactUs() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [phone, setPhone] = useState("");
+  const [submitted, setSubmitted] = useState(false);
+
   async function handleSubmit(e) {
     e.preventDefault();
-    const data = new FormData(e.currentTarget);
+    let data = {
+      name,
+      email,
+      phone,
+      message,
+    };
+
     try {
       const response = await fetch("/api/contact", {
-        method: "post",
-        body: new URLSearchParams(data),
+        method: "POST",
+        headers: {
+          Accept: "application/json, text/plain, */*",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      }).then((res) => {
+        console.log("Response received");
+        if (res.status === 200) {
+          console.log("Response succeeded!");
+          setSubmitted(true);
+          setName("");
+          setEmail("");
+          setPhone("");
+          setMessage("");
+        }
       });
-      if (!response.ok) {
-        throw new Error(`Invalid response: ${response.status}`);
-      }
+
       alert("Thanks for contacting us, we will get back to you soon!");
     } catch (err) {
       console.error(err);
@@ -28,23 +53,16 @@ export default function ContactUs() {
           <h1 className="text-center">Contact us</h1>
           <div className="name flex flex-row justify-between mb-8">
             <div className="mb-4 flex flex-col">
-              <label htmlFor="frm-first">First Name</label>
+              <label htmlFor="frm-first">Full Name</label>
               <input
                 id="frm-first"
                 type="text"
-                name="first"
+                name="name"
                 autoComplete="given-name"
                 required
-              />
-            </div>
-            <div className="flex flex-col">
-              <label htmlFor="frm-last">Last Name</label>
-              <input
-                id="frm-last"
-                type="text"
-                name="last"
-                autoComplete="family-name"
-                required
+                onChange={(e) => {
+                  setName(e.target.value);
+                }}
               />
             </div>
           </div>
@@ -56,6 +74,9 @@ export default function ContactUs() {
               name="email"
               autoComplete="email"
               required
+              onChange={(e) => {
+                setEmail(e.target.value);
+              }}
             />
           </div>
           <div className="phone flex flex-col mb-8">
@@ -66,15 +87,32 @@ export default function ContactUs() {
               name="phone"
               autoComplete="tel"
               required
+              onChange={(e) => {
+                setPhone(e.target.value);
+              }}
             />
           </div>
 
           <div className="message flex flex-col mb-8">
             <label htmlFor="frm-message">Message</label>
-            <textarea id="frm-message" name="message" rows={6}></textarea>
+            <textarea
+              id="frm-message"
+              name="message"
+              rows={6}
+              onChange={(e) => {
+                setMessage(e.target.value);
+              }}
+            ></textarea>
           </div>
           <div className="button primary flex flex-col items-center">
-            <button type="submit">Submit</button>
+            <button
+              type="submit"
+              onClick={(e) => {
+                handleSubmit(e);
+              }}
+            >
+              Submit
+            </button>
           </div>
         </form>
       </div>

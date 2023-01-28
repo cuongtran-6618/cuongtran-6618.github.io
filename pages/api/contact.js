@@ -2,6 +2,7 @@ const sgMail = require("@sendgrid/mail");
 import { loadEnvConfig } from "@next/env";
 
 export default function handler(req, res) {
+  console.log(req.body);
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
   const msg = {
     to: "mailtocuong@gmail.com", // Change to your recipient
