@@ -1,23 +1,30 @@
-const sgMail = require("@sendgrid/mail");
-import { loadEnvConfig } from "@next/env";
-
 export default function handler(req, res) {
-  console.log(req.body);
-  sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-  const msg = {
-    to: "mailtocuong@gmail.com", // Change to your recipient
-    from: req.body.email, // Change to your verified sender
-    subject: "Sending with SendGrid is Fun",
-    text: req.body.message,
-    html: "<strong>and easy to do anywhere, even with Node.js</strong>",
+  let nodemailer = require("nodemailer");
+  const dotenv = require("dotenv");
+  dotenv.config();
+
+  const transporter = nodemailer.createTransport({
+    service: process.env.SEND_MAIL_PROVIDER,
+    port: 465,
+    host: process.env.SEND_MAIL_PROVIDER_HOST,
+    auth: {
+      user: process.env.SEND_MAIL_PROVIDER_USERNAME,
+      pass: process.env.SEND_MAIL_PROVIDER_PASSWORD,
+    },
+    secure: true,
+  });
+
+  const mailData = {
+    from: req.body.email,
+    to: "felia.solutions@gmail.com",
+    subject: `Message From ${req.body.name}`,
+    text: req.body.message + " | Sent from: " + req.body.email,
+    html: `<div>${req.body.message}</div><p>Sent from:
+    ${req.body.email}</p>`,
   };
-  sgMail
-    .send(msg)
-    .then(() => {
-      console.log("Email sent");
-      res.send(200);
-    })
-    .catch((error) => {
-      console.error(error);
-    });
+  transporter.sendMail(mailData, function (err, info) {
+    if (err) console.log(err);
+    else console.log(info);
+  });
+  res.status(200);
 }
