@@ -28,7 +28,7 @@ export default function ContactUs() {
         },
         body: JSON.stringify(data),
       }).then((res) => {
-        console.log("Response received");
+        console.log("Response received: ", res);
         if (res.status === 200) {
           console.log("Response succeeded!");
           setSubmitted(true);
