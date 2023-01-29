@@ -23,8 +23,8 @@ export default function handler(req, res) {
     ${req.body.email}</p>`,
   };
   transporter.sendMail(mailData, function (err, info) {
-    if (err) console.log(err);
-    else console.log(info);
+    if (err) console.error("error: ", err);
+    else console.info(info);
   });
   res.status(200);
 }
