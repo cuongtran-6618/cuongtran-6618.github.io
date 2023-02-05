@@ -11,7 +11,6 @@ export default function Home() {
       <ServiceList />
       <PorfolioList />
       <Contact />
-      <TeamList />
     </Layout>
   );
 }
