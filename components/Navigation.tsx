@@ -28,7 +28,7 @@ export default function Navigation() {
           <Link
             href="/"
             title="homepage"
-            className="font-bold text-3xl flex flex-row justify-center items-baseline"
+            className="font-bold text-2xl md:text-3xl flex flex-row justify-center items-baseline"
           >
             {company.info.name}
           </Link>

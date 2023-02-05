@@ -8,13 +8,16 @@ export default function HeroSection() {
       >
         <div
           id="hero-content-container-wrapper"
-          className="bg-gradient-to-b from-transparent to-[#303841] absolute top-0 left-0 right-0 bottom-0 p-4"
+          className="bg-gradient-to-b from-transparent to-[#303841] absolute top-0 left-0 right-0 bottom-0 p-4 flex flex-col justify-center"
         >
           <div
             id="hero-content-container"
-            className="mx-auto max-w-screen-md text-center md:mt-48"
+            className="mx-auto max-w-screen-md text-center"
           >
-            <div id="hero-title" className="text-4xl font-bold uppercase mb-5">
+            <div
+              id="hero-title"
+              className="text-2xl md:text-4xl font-bold uppercase mb-5"
+            >
               <h1 className="font-rubik">{herosectionData.title}</h1>
             </div>
             <div id="hero-content" className="text-sm md:text-2xl font-roboto">
