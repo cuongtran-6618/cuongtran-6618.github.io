@@ -7,3 +7,7 @@ https://felia.vercel.app/
 ### Style of this page:
 - Using the tailwindcss stylesheet by default
 - Any custom stylesheet can be placed in the style directory globals.css
+
+### Run the application
+`npm run dev`
+

@@ -1,3 +1,4 @@
+import herosectionData from "../data/HeroSection.json";
 export default function HeroSection() {
   return (
     <>
@@ -14,11 +15,10 @@ export default function HeroSection() {
             className="mx-auto max-w-screen-md text-center md:mt-48"
           >
             <div id="hero-title" className="text-4xl font-bold uppercase mb-5">
-              <h1 className="font-rubik">Arpeggio title</h1>
+              <h1 className="font-rubik">{herosectionData.title}</h1>
             </div>
             <div id="hero-content" className="text-sm md:text-2xl font-roboto">
-              Lorem ipsum dolor sit amet consectetur. Gravida felis mauris
-              lectus amet. Sed eu odio consectetur nisi scelerisque.
+              {herosectionData.content}
             </div>
           </div>
         </div>
