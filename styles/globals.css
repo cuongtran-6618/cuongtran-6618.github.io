@@ -128,6 +128,11 @@ body {
   padding-top: 64px;
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /** mobile style **/
 @media screen, print and (max-width: 768px) {
   div.grid-item {
