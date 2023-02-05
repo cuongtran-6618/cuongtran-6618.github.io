@@ -4,7 +4,12 @@ import Head from "next/head";
 export default function Meta() {
   return (
     <Head>
-      <meta name="description" content={`A statically page for Arpeggio Oy.`} />
+      <meta
+        name="description"
+        content={`A meta tag for Felia Consultance Oy.`}
+      />
+      <meta name="robots" content="noindex,nofollow" />
+      <meta name="googlebot" content="noindex,nofollow" />
     </Head>
   );
 }
