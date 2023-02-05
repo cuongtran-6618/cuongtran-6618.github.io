@@ -4,7 +4,7 @@ import LogoSrc from "../public/images/Logo.png";
 import navigation from "../data/navigation.json";
 import NavigationItem from "./NavigationItem";
 import company from "../data/company.json";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   XMarkIcon,
   Bars3Icon,
@@ -21,14 +21,35 @@ export default function Navigation() {
   const closeMobileNav = () => {
     setIsNavOpen(false);
   };
+
+  useEffect(() => {
+    window.onscroll = function () {
+      addStickeyMenu();
+    };
+
+    const navbar = document.getElementById("navigation-container");
+    let sticky = navbar.offsetTop;
+
+    function addStickeyMenu() {
+      if (window.pageYOffset > sticky) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  }, []);
+
   return (
     <>
-      <div className="flex flex-row secondary-color text-white">
+      <div
+        className="flex flex-row secondary-color text-white overflow-hidden"
+        id="navigation-container"
+      >
         <div className="flex flex-col justify-center items-baseline flex-wrap mx-6 grow lg:grow-0">
           <Link
             href="/"
             title="homepage"
-            className="font-bold text-2xl md:text-3xl flex flex-row justify-center items-baseline"
+            className="font-bold text-xl md:text-3xl flex flex-row justify-center items-baseline"
           >
             {company.info.name}
           </Link>

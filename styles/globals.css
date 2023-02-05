@@ -116,6 +116,18 @@ body {
   border-color: var(--safety-orange-color);
 }
 
+/** Navigation **/
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.sticky + .content {
+  padding-top: 64px;
+}
+
 /** mobile style **/
 @media screen, print and (max-width: 768px) {
   div.grid-item {
