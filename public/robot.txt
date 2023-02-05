@@ -1,0 +1,3 @@
+# Block all crawlers for /accounts
+User-agent: *
+Disallow: /index /contact /about-us /our-services /services 
