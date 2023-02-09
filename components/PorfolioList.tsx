@@ -5,11 +5,11 @@ import SectionHeader from "./SectionHeader";
 
 export default function PorfolioList() {
   return (
-    <section className="block-container mx-auto mb-16 lg:mb-20">
+    <section className="block-container mx-auto mb-32 px-4 lg:mb-20">
       <div>
         <SectionHeader title={"Our Porfolio"} />
       </div>
-      <div className="flex flex-col mx-auto md:flex-row md:justify-center md:aligns-baseline md:gap-8 mb-10 gap-4">
+      <div className="flex flex-col mx-auto md:flex-row md:justify-center md:aligns-baseline md:gap-8 mb-10 gap-12">
         {data.porfolios.map((porfolio) => (
           <Porfolio key={porfolio.uid} props={porfolio} />
         ))}

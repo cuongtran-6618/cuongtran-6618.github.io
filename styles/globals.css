@@ -104,7 +104,6 @@ body {
 
 #hero-section {
   width: auto;
-  padding: 30px 20px;
   background-image: url('../public/images/computer.jpg');
   background-size: cover;
 }
@@ -139,11 +138,8 @@ body {
     width: 100%;
   }
 
-  .block-container {
-    width: calc(100% - 32px);
+  #hero-section {
+    max-height: 400px;
   }
 
-  .service-item {
-      min-height: calc(100vw - 32px);
-  }
 }

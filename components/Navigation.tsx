@@ -7,8 +7,7 @@ import company from "../data/company.json";
 import { useState, useEffect } from "react";
 import {
   XMarkIcon,
-  Bars3Icon,
-  CheckBadgeIcon,
+  Bars3Icon
 } from "@heroicons/react/24/solid";
 
 export default function Navigation() {
@@ -49,7 +48,7 @@ export default function Navigation() {
           <Link
             href="/"
             title="homepage"
-            className="font-bold text-xl md:text-3xl flex flex-row justify-center items-baseline"
+            className="font-bold text-xl md:text-3xl flex flex-row justify-center items-baseline uppercase"
           >
             {company.info.name}
           </Link>
