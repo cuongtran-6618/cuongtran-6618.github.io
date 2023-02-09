@@ -1,26 +1,23 @@
 {
   "navigation": [
     {
-      "title": "About us",
-      "content": "Lorem ispum 3",
-      "link": "/about-us",
-      "uid": "c554dca1-6320-4fb3-8edb-b8a120fe978f"
-    },
-    {
       "title": "Our services",
-      "link": "/our-services",
+      "link": "our-services-container",
+      "type": "anchor",
       "uid": "dd2d2005-4b59-4399-8d4b-ee6a9dbf581f"
     },
     {
       "title": "Our portfolio",
       "content": "Lorem ispum 2",
-      "link": "/our-porfolio",
+      "link": "our-porfolio-container",
+      "type": "anchor",
       "uid": "c3f02b16-363d-4c1c-a569-2b4bbfad7d38"
     },
     {
       "title": "Contact",
       "content": "Lorem ispum 4",
-      "link": "/contact",
+      "link": "contact-container",
+      "type": "anchor",
       "uid": "dcaee35a-3ef1-4199-907b-2344dc4ba2be"
     }
   ]

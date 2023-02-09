@@ -12,11 +12,11 @@ export default function HeroSection() {
         >
           <div
             id="hero-content-container"
-            className="text-center"
+            className="text-center container lg:max-w-5xl"
           >
             <div
               id="hero-title"
-              className="text-xl md:text-4xl font-bold uppercase mb-16 text-left"
+              className="text-xl md:text-4xl font-bold uppercase mb-16 text-left lg:text-center"
             >
               <h1 className="font-rubik">{herosectionData.title}</h1>
             </div>
