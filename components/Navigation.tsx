@@ -22,12 +22,17 @@ export default function Navigation() {
   };
 
   useEffect(() => {
-    window.onscroll = function () {
-      addStickeyMenu();
-    };
-
     const navbar = document.getElementById("navigation-container");
     let sticky = navbar.offsetTop;
+    let oldScrollY = window.scrollY;
+    window.onscroll = function () {
+      if (oldScrollY > window.scrollY) {
+        addStickeyMenu();
+      } else {
+       navbar.classList.remove("sticky");
+      }
+      oldScrollY = window.scrollY;
+    };
 
     function addStickeyMenu() {
       if (window.pageYOffset > sticky) {

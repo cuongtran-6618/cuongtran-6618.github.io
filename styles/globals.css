@@ -53,6 +53,7 @@ body {
   --outer-spce-grey-color: #303841;
   --safety-orange-color: #ff7700;
   --navy-blue-color: #1cd6ce;
+  --cream-color: #f8f8f8;
 }
 
 .primary-color {
@@ -65,6 +66,14 @@ body {
 
 .link-color {
   color: var(--navy-blue-color);
+}
+
+.cream-color {
+   background-color: var(--cream-color);
+}
+
+.btn-primary-color {
+  border: 3px solid var(--safety-orange-color);
 }
 
 #mobile-nav-slider-container {

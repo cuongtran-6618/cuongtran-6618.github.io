@@ -16,7 +16,7 @@ export default function ServiceList() {
       </div>
       <LinkArrow
         label={"Contact us for more information   "}
-        url={"./contact"}
+        url={"#contact-us-container"}
       />
     </section>
   );
