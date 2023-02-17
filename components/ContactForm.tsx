@@ -56,6 +56,7 @@ export default function ContactForm() {
                 id="frm-first"
                 type="text"
                 name="name"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 autoComplete="given-name"
                 required
                 onChange={(e) => {
@@ -71,6 +72,7 @@ export default function ContactForm() {
                 id="frm-email"
                 type="email"
                 name="email"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 autoComplete="email"
                 placeholder="Please enter a valid email address"
                 required
@@ -85,6 +87,7 @@ export default function ContactForm() {
                 id="frm-phone"
                 type="text"
                 name="phone"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 autoComplete="tel"
                 placeholder="Please enter a valid phone number"
                 required
@@ -99,6 +102,7 @@ export default function ContactForm() {
             <textarea
               id="frm-message"
               name="message"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               rows={6}
               onChange={(e) => {
                 setMessage(e.target.value);
