@@ -48,7 +48,7 @@ export default function ContactForm() {
   return (
     <>
       <div className="mx-full cream-color px-4" id="contact-us-container">
-        <form className="container mx-auto py-16" onSubmit={handleSubmit}>
+        <form className="container mx-auto py-16 lg:px-32" onSubmit={handleSubmit}>
           <div className="name flex flex-col justify-between mb-8">
             <div className="mb-4 flex flex-col">
               <label htmlFor="frm-first" className="mb-4">Your Name</label>

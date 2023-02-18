@@ -1,6 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
-import LogoSrc from "../public/images/Logo.png";
 import navigation from "../data/navigation.json";
 import NavigationItem from "./NavigationItem";
 import company from "../data/company.json";
@@ -26,10 +24,11 @@ export default function Navigation() {
     let sticky = navbar.offsetTop;
     let oldScrollY = window.scrollY;
     window.onscroll = function () {
+      // only show the sticky if the user has scrolled up
       if (oldScrollY > window.scrollY) {
         addStickeyMenu();
       } else {
-       navbar.classList.remove("sticky");
+        navbar.classList.remove("sticky");
       }
       oldScrollY = window.scrollY;
     };
@@ -45,11 +44,9 @@ export default function Navigation() {
 
   return (
     <>
-      <div
-        className="flex flex-row secondary-color text-white overflow-hidden"
-        id="navigation-container"
-      >
-        <div className="flex flex-col justify-center items-baseline flex-wrap mx-6 grow lg:grow-0">
+      <div id="navigation-container" className="secondary-color">
+        <div className="flex flex-row secondary-color text-white overflow-hidden container">
+          <div className="flex flex-col justify-center items-baseline flex-wrap mx-6 grow lg:grow-0">
           <Link
             href="/"
             title="homepage"
@@ -92,6 +89,7 @@ export default function Navigation() {
             </ul>
           </nav>
         </section>
+        </div>          
       </div>
     </>
   );
