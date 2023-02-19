@@ -12,7 +12,8 @@ export default function Footer() {
           </div>
           <div className="flex flex-col mb-24 gap-12 md:justify-center md:aligns-baseline md:flex-row md:gap-8">
             <div className="p-4 lg:px-12 text-white w-full text-left">
-              <div className="">Address: {company.info.address}</div>
+              <div className="font-extrabold">Contact info</div>
+              <div className="">Email: {company.info.email}</div>
               <div>Tel: {company.info.telephone}</div>
             </div>
           </div>

@@ -48,10 +48,15 @@ export default function ContactForm() {
   return (
     <>
       <div className="mx-full cream-color px-4" id="contact-us-container">
-        <form className="container mx-auto py-16 lg:px-32" onSubmit={handleSubmit}>
+        <form
+          className="container mx-auto py-16 lg:px-80"
+          onSubmit={handleSubmit}
+        >
           <div className="name flex flex-col justify-between mb-8">
             <div className="mb-4 flex flex-col">
-              <label htmlFor="frm-first" className="mb-4">Your Name</label>
+              <label htmlFor="frm-first" className="mb-4">
+                Your Name<span className="text-red-600">*</span>
+              </label>
               <input
                 id="frm-first"
                 type="text"
@@ -67,7 +72,9 @@ export default function ContactForm() {
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             <div className="email flex flex-col mb-8">
-              <label htmlFor="frm-email" className="mb-4">Your Email<span className="text-red-600">*</span></label>
+              <label htmlFor="frm-email" className="mb-4">
+                Your Email<span className="text-red-600">*</span>
+              </label>
               <input
                 id="frm-email"
                 type="email"
@@ -82,7 +89,9 @@ export default function ContactForm() {
               />
             </div>
             <div className="phone flex flex-col mb-8">
-              <label htmlFor="frm-phone" className="mb-4">Phone<span className="text-red-600">*</span></label>
+              <label htmlFor="frm-phone" className="mb-4">
+                Phone<span className="text-red-600">*</span>
+              </label>
               <input
                 id="frm-phone"
                 type="text"
@@ -98,7 +107,9 @@ export default function ContactForm() {
             </div>
           </div>
           <div className="message flex flex-col mb-8">
-            <label htmlFor="frm-message" className="mb-4">Message</label>
+            <label htmlFor="frm-message" className="mb-4">
+              Message
+            </label>
             <textarea
               id="frm-message"
               name="message"
@@ -107,11 +118,13 @@ export default function ContactForm() {
               onChange={(e) => {
                 setMessage(e.target.value);
               }}
+              placeholder="What are you looking for?"
             ></textarea>
           </div>
 
           <div className="mb-8">
-            A <span className="text-red-600">*</span><span> means required field.</span>
+            A <span className="text-red-600">*</span>
+            <span> means required field.</span>
           </div>
           <div className="button primary flex flex-col justify-start">
             <button
