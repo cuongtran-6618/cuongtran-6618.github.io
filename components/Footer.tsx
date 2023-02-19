@@ -36,7 +36,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mb-8">
-          © {new Date().getFullYear()} Copyright {company.info.name} solutions
+          © {new Date().getFullYear()} Copyright {company.info.name} Solutions
           Oy
         </div>
       </div>
