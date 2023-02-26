@@ -28,7 +28,7 @@ export default function AboutUs() {
             <p>
               Our focus is on building websites and eCommerce stores that not
               only look great, but also deliver results. We understand that in
-              today's digital age, having an online presence is crucial for
+              today&apos;s digital age, having an online presence is crucial for
               businesses of all sizes, and we are here to help our clients make
               the most of their digital opportunities. Whether you are a small
               business just starting out or a large corporation looking to
