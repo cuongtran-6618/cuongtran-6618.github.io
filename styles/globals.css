@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /** desktop style **/
-@media screen, print and (min-width: 1080px) {
+@media all and (min-width: 1081px) {
   .block-container div.grid-item {
     width: 33.33%;
   }
@@ -23,7 +23,7 @@
 }
 
 /** table style **/
-@media screen, print and (min-width: 768px) and (max-width: 1080px) {
+@media all and (min-width:768px) and (max-width:1080px) {
   #hero-section {
     height: calc(100vh - 80px);
     max-height: unset !important;
@@ -163,12 +163,12 @@ body {
 }
 
 /** mobile style **/
-@media screen, print and (max-width: 767px) {
+@media all and (max-width:767px) {
   div.grid-item {
     width: 100%;
   }
 
   #hero-section {
-    max-height: 400px;
+    max-height: 400px !important;
   }
 }

@@ -5,7 +5,7 @@ export default function AboutUs() {
     <>
       <section
         id="about-us-section"
-        className="text-black dark-cream-color p4 pb-16 lg:pt-12 lg:pb-32"
+        className="text-black dark-cream-color px-4 pb-16 lg:pt-12 lg:pb-32"
       >
         <div
           id="about-us-content-container"
