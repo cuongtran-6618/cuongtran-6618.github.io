@@ -1,4 +1,3 @@
-import LinkButton from "./LinkButton";
 import Icon from "./Icon";
 
 export default function Service({ props }) {
@@ -8,7 +7,9 @@ export default function Service({ props }) {
       <h5 className="font-rubik font-medium uppercase text-xl">
         {props.title}
       </h5>
-      <div className="pt-6 text-base md:text-base break-words">{props.content}</div>
+      <div className="pt-6 text-base md:text-base break-words">
+        {props.content}
+      </div>
     </div>
   );
 }

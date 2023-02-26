@@ -1,6 +1,3 @@
-import LinkButton from "./LinkButton";
-import Icon from "./Icon";
-
 export default function Porfolio({ props }) {
   return (
     <div className="p-4 md:p-12 border text-white w-full md:w-1/2 lg:w-1/3">

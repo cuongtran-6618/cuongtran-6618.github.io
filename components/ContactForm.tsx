@@ -1,5 +1,6 @@
 import BackHome from "../components/BackHome";
 import Layout from "../components/Layout";
+import SectionHeader from "./SectionHeader";
 import React from "react";
 import { useState } from "react";
 
@@ -47,11 +48,16 @@ export default function ContactForm() {
 
   return (
     <>
-      <div className="mx-full cream-color px-4" id="contact-us-container">
+      <section id="contact-us-banner-section" className="w-full"></section>
+      <section className="mx-full cream-color px-4" id="contact-us-container">
         <form
           className="container mx-auto py-16 lg:px-80"
           onSubmit={handleSubmit}
         >
+          <SectionHeader
+            title="Contact Us"
+            styleClass="text-xl text-center font-bold mb-10 lg:mb-16 lg:text-3xl"
+          />
           <div className="name flex flex-col justify-between mb-8">
             <div className="mb-4 flex flex-col">
               <label htmlFor="frm-first" className="mb-4">
@@ -124,7 +130,7 @@ export default function ContactForm() {
 
           <div className="mb-8">
             A <span className="text-red-600">*</span>
-            <span> means required field.</span>
+            <span> is a required field.</span>
           </div>
           <div className="button primary flex flex-col justify-start">
             <button
@@ -138,7 +144,7 @@ export default function ContactForm() {
             </button>
           </div>
         </form>
-      </div>
+      </section>
     </>
   );
 }

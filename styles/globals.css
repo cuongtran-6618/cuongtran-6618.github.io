@@ -16,6 +16,10 @@
   div.service-item {
     min-height: unset;
   }
+
+  #contact-us-banner-section {
+    height: 600px;
+  }
 }
 
 /** table style **/
@@ -53,6 +57,7 @@ body {
   --outer-spce-grey-color: #303841;
   --safety-orange-color: #ff7700;
   --navy-blue-color: #1cd6ce;
+  --dark-cream-color: #e1dcd7;
   --cream-color: #f8f8f8;
 }
 
@@ -70,6 +75,10 @@ body {
 
 .cream-color {
    background-color: var(--cream-color);
+}
+
+.dark-cream-color {
+   background-color: var(--dark-cream-color);
 }
 
 .btn-primary-color {
@@ -120,6 +129,12 @@ body {
 #hero-section {
   width: auto;
   background-image: url('../public/images/computer.jpg');
+  background-size: cover;
+}
+
+#contact-us-banner-section {
+  width: auto;
+  background-image: url('../public/images/brainstorm.jpg');
   background-size: cover;
 }
 
