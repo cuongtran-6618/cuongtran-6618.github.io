@@ -15,7 +15,7 @@ export default function handler(req, res) {
   });
 
   const mailData = {
-    from: req.body.email,
+    from: process.env.SEND_MAIL_PROVIDER_USERNAME,
     to: "hello@felia.fi",
     subject: `Message From ${req.body.name}`,
     text:
