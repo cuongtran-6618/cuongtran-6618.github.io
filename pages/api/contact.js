@@ -18,14 +18,8 @@ export default function handler(req, res) {
     from: process.env.SEND_MAIL_PROVIDER_USERNAME,
     to: "hello@felia.fi",
     subject: `Message From ${req.body.name}`,
-    text:
-      req.body.message +
-      " | Sent from: " +
-      req.body.email +
-      " | tel: " +
-      req.body.phone,
-    html: `<div>${req.body.message}</div><p>Sent from:
-    ${req.body.email}</p>`,
+    text: `${req.body.message} | Sent from: ${req.body.message}  | tel: ${req.body.phone}`,
+    html: `<div>${req.body.message} </div><p>Sent from email: ${req.body.email}</p><p>Sent from telphone: ${req.body.phone}</p>`,
   };
   transporter.sendMail(mailData, function (err, info) {
     if (err) {
