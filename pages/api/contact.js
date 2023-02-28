@@ -20,7 +20,7 @@ export default function handler(req, res) {
   console.log($html);
   const mailData = {
     from: process.env.SEND_MAIL_PROVIDER_USERNAME,
-    to: process.env.RECEIVER_EMAIL,
+    to: "hello@felia.fi",
     subject: `Message From ${req.body.name}`,
     text: `${req.body.message} | Sent from: ${req.body.message}  | tel: ${req.body.phone}`,
     html: $html,
