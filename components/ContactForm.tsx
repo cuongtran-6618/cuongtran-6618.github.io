@@ -48,7 +48,6 @@ export default function ContactForm() {
 
   return (
     <>
-      <section id="contact-us-banner-section" className="w-full"></section>
       <section className="mx-full cream-color px-4" id="contact-us-container">
         <form
           className="container mx-auto py-16 lg:px-80"

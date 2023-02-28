@@ -7,11 +7,10 @@
       "uid": "dd2d2005-4b59-4399-8d4b-ee6a9dbf581f"
     },
     {
-      "title": "Our portfolio",
-      "content": "Lorem ispum 2",
-      "link": "our-porfolio-container",
+      "title": "Who we are",
+      "link": "about-us-section",
       "type": "anchor",
-      "uid": "c3f02b16-363d-4c1c-a569-2b4bbfad7d38"
+      "uid": "dd2d2005-4b59-4399-8d4b-ee6a9dbf581g"
     },
     {
       "title": "Contact",

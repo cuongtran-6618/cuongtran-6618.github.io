@@ -31,7 +31,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="p-4 lg:px-12 text-white w-full md:w-1/2 lg:w-1/3 text-left lg:text-center">
-            <div className="">Linkedin</div>
+            <div>Linkedin</div>
             <div>Facebook</div>
           </div>
         </div>
