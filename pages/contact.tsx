@@ -36,6 +36,10 @@ export default function ContactUs() {
           setEmail("");
           setPhone("");
           setMessage("");
+          document.getElementById("frm-first").setAttribute("value", "");
+          document.getElementById("frm-email").setAttribute("value", "");
+          document.getElementById("frm-phone").setAttribute("value", "");
+          document.getElementById("frm-message").setAttribute("value", "");
         }
       });
 

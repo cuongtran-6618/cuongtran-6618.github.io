@@ -3,6 +3,8 @@ export default function handler(req, res) {
   const dotenv = require("dotenv");
   dotenv.config();
 
+  console.log(req.body);
+
   const transporter = nodemailer.createTransport({
     service: process.env.SEND_MAIL_PROVIDER,
     port: 465,
@@ -14,13 +16,16 @@ export default function handler(req, res) {
     secure: true,
   });
 
+  let $html = `<div>${req.body.message} </div><p>Sent from email: ${req.body.email}</p><p>Sent from telphone: ${req.body.phone}</p>`;
+  console.log($html);
   const mailData = {
     from: process.env.SEND_MAIL_PROVIDER_USERNAME,
-    to: "hello@felia.fi",
+    to: process.env.RECEIVER_EMAIL,
     subject: `Message From ${req.body.name}`,
     text: `${req.body.message} | Sent from: ${req.body.message}  | tel: ${req.body.phone}`,
-    html: `<div>${req.body.message} </div><p>Sent from email: ${req.body.email}</p><p>Sent from telphone: ${req.body.phone}</p>`,
+    html: $html,
   };
+
   transporter.sendMail(mailData, function (err, info) {
     if (err) {
       res.status(500).send({ message: ` error: ${err}` });
