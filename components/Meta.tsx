@@ -8,8 +8,6 @@ export default function Meta() {
       <title>{seo.meta.title}</title>
       <meta name="keywords" content={seo.meta.keywords} />
       <meta name="description" content={seo.meta.description} />
-      <meta name="robots" content="noindex,nofollow" />
-      <meta name="googlebot" content="noindex,nofollow" />
     </Head>
   );
 }
