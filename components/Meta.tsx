@@ -8,6 +8,7 @@ export default function Meta() {
       <title>{seo.meta.title}</title>
       <meta name="keywords" content={seo.meta.keywords} />
       <meta name="description" content={seo.meta.description} />
+      <link rel="canonical" href={seo.canon_link} />
     </Head>
   );
 }
